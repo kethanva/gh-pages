@@ -3,6 +3,49 @@
 <title>Kethan's website</title>
 <head>
 <link rel="stylesheet" type="text/css" href="css/css1.css">
+<link rel="stylesheet" href="css/minitip.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/miniTip.js"></script>
+<script>
+$(function() {
+$('.facebook_tip').miniTip({
+  offset: -3,
+  position: 'bottom',
+  arrow_left_offset:15,//positive arrow_left_offset-left_offset ->9
+  left_offset:6 //negative value
+});
+
+$('.google_plus_tip').miniTip({
+  offset: -3,
+  position: 'bottom',
+  arrow_left_offset:13,//positive arrow_left_offset-left_offset ->9
+  left_offset:4 //negative value
+});
+$('.twitter_tip').miniTip({
+  offset: -3,
+  position: 'bottom',
+  arrow_left_offset:10,//positive arrow_left_offset-left_offset ->9
+  left_offset:1 //negative value
+});
+$('.skype_tip').miniTip({
+  offset: -3,
+  position: 'bottom',
+  arrow_left_offset:7,//positive arrow_left_offset-left_offset ->9
+  left_offset:-2 //negative value
+});
+$('.mail_tip').miniTip({
+  offset: -3,
+  position: 'bottom',
+  arrow_left_offset:7,//positive arrow_left_offset-left_offset ->9
+  left_offset:-2 //negative value
+});	
+/*
+$('.google_plus_tip').miniTip({
+  offset: 29
+});
+*/
+});
+</script>
 </head>
 <body>
 <div id="text1" width="" height="" class="text1">
@@ -10,11 +53,16 @@
 <div class="ex2" style="">KETHAN</div>
 </div>
 
+
 <div id="text2" width="" height="" class="text2" >
-<a href="http://www.facebook.com/kethan.va"><img src="images/facebook-icon.png" width="40" height="40"/></a>
-<a href="https://plus.google.com/111946760084445885362"><img src="images/google-plus-icon.png" width="40" height="40"/></a>
-<a href="http://twitter.com/kethanva"><img src="images/twitter-icon.png" width="40" height="40"/></a>
-<a href="callto://kethan.va/"><img src="images/skype-icon.png" width="40" height="40"/></a>
-</div>
+<span class="facebook_tip" title="Facebook" style=""><a href="http://www.facebook.com/kethan.va"><img src="images/facebook-icon.png" width="40" height="40"/></a></span>
+<span class="google_plus_tip" title="Google+" style=""><a href="https://plus.google.com/111946760084445885362"><img src="images/google-plus-icon.png" width="40" height="40"/></a></span>
+<span class="twitter_tip" title="Twitter" style=""><a href="http://twitter.com/kethanva"><img src="images/twitter-icon.png" width="40" height="40"/></a></span>
+<span class="skype_tip" title="Skype" style=""><a href="callto://kethan.va/"><img src="images/skype-icon.png" width="40" height="40"/></a></span>
+<span class="mail_tip" title="E-mail" style=""><a href="mailto:kethan.inbox@gmail.com?Subject=Hello"><img src="images/gmail.png" width="42" height="42"/></a></span>
+
+
+</div> 
+<br />
 </body>
 </html>
